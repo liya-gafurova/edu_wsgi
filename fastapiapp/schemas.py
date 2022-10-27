@@ -11,7 +11,10 @@ class PostDB(BaseModel):
     id: IdType
     title: Optional[str]
     text: str
-    created: datetime
+    created: Optional[datetime]
+
+    class Config:
+        orm_mode=True
 
 
 class PostCreate(BaseModel):
@@ -21,5 +24,6 @@ class PostCreate(BaseModel):
 
 class PostRead(PostDB):
     pass
+
 
 
