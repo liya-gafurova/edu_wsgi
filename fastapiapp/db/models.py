@@ -1,6 +1,6 @@
 from sqlalchemy import String, Column, Text, DateTime, sql
 
-from fastapiapp.db.db import Base
+from db.db import Base
 
 
 class Post(Base):

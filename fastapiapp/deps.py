@@ -1,6 +1,6 @@
 from typing import Generator
 
-from fastapiapp.db.db import SessionLocal
+from db.db import SessionLocal
 
 
 def get_db() -> Generator:

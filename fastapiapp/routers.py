@@ -4,10 +4,10 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from starlette import status
 
-from fastapiapp.deps import get_db
-from fastapiapp.repository.posts import crud_post
-from fastapiapp.schemas import PostRead, IdType, PostCreate, PostDB
-from fastapiapp.utils import generate_uuid
+from deps import get_db
+from repository.posts import crud_post
+from schemas import PostRead, IdType, PostCreate, PostDB
+from utils import generate_uuid
 
 router = APIRouter()
 
